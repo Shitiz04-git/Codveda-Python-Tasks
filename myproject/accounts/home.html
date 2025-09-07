@@ -1,0 +1,8 @@
+<h2>Welcome, {{ user.username }}</h2>
+{% if user.is_staff %}
+    <p>You are an Admin</p>
+{% else %}
+    <p>You are a Regular User</p>
+{% endif %}
+<a href="{% url 'logout' %}">Logout</a>
+
